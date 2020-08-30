@@ -1,6 +1,5 @@
 from selenium.common.exceptions import NoSuchElementException
 
-
 class BasePage():
     def __init__(self, browser, url, timeout=10):
         self.browser = browser
@@ -16,3 +15,11 @@ class BasePage():
         except NoSuchElementException:
             return False
         return True
+    
+    def find_element(self, how, what):
+        try:
+            return self.browser.find_element(how, what)
+        except NoSuchElementException:
+            return None
+        
+
