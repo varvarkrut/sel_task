@@ -2,7 +2,7 @@ from pages.product_page import ProductPage
 import math
 from selenium.common.exceptions import NoAlertPresentException
 import pytest
-'''@pytest.mark.parametrize('link', [0, 1, 2, 3, 4, 5, 6,
+@pytest.mark.parametrize('link', [0, 1, 2, 3, 4, 5, 6,
                                   pytest.param(7, marks=pytest.mark.xfail),
                                   8, 9])
 def test_guest_can_add_product_to_basket(browser, link):
@@ -36,7 +36,7 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page.click_on_the_basket()
     page.should_be_disappeared_success_message()
 
-'''
+
 
 def test_guest_should_see_login_link_on_product_page(browser):
     link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
