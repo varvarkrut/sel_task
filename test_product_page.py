@@ -1,8 +1,11 @@
 from pages.product_page import ProductPage
 import math
 from selenium.common.exceptions import NoAlertPresentException
+<<<<<<< HEAD
 import pytest
 import time
+=======
+>>>>>>> a9a812d701b1f375d4a7215aa504357156d96990
 
 @pytest.mark.parametrize('link', [0, 1, 2, 3, 4, 5, 6,
                                   pytest.param(7, marks=pytest.mark.xfail),
