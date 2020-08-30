@@ -1,6 +1,6 @@
 from pages.product_page import ProductPage
 import math
-from selenium.common.exceptions import NoAlertPresentException  # в начале файла
+from selenium.common.exceptions import NoAlertPresentException
 
 
 
